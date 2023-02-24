@@ -1,16 +1,15 @@
 # Proyecto2ndoTrimestre
 
-### Se pide las instalación, configuración y puesta en marcha de un servidor que ofrezca servicio de alojamiento web configurable:
+### Para la realización de esta práctica he necesitado instalar los siguientes servicios:
 
-* Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”
-* Los clientes dispondrán de un directorio de usuario con una página web por defecto. 
-* Además contarán con una base de datos sql que podrán administrar con phpmyadmin
-* Los clientes podrán acceder mediante ftp para la administración de archivos configurando adecuadamente TLS
-* Se habilitará el acceso mediante ssh y sftp. 
-* Se configura de forma adecuada postfix y dovecot imap y pop3
+* Apache 
+* Bind
+* PHP
+* MYSql
+* Python
 
 ### Se automatizará mediante el uso de scripts: 
-* La creación de usuarios y del directorio correspondiente para el alojamiento web
+* [La creación de usuarios y del directorio correspondiente para el alojamiento web](/Proyecto2ndoTrimestre/ScriptUsuario.md)
 * Host virtual en apache
 * Creación de usuario del sistema para acceso a ftp, ssh, smtp, …
 * Se creará un subdominio en el servidor DNS con las resolución directa e inversa
