@@ -32,3 +32,7 @@ else
   sudo cp /var/www/html/index.html /var/www/html/$user/index.html
 fi
 ```
+
+Así quedaría el script implementado en la función:
+
+![image](https://user-images.githubusercontent.com/91189372/221432636-08fef4d3-7476-4d14-8fd4-a12fc6674a24.png)
