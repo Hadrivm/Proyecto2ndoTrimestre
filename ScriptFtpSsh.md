@@ -23,14 +23,22 @@ Compruebo que el usuario existe
 comprobar=`grep $usu /etc/passwd`
 ```
 
-Con una sentencia IF, si el usuario existe le doy acceso a los servicios, sino muestro un mensaje de error
+Con una sentencia IF, si el usuario existe le doy acceso a los servicios
 
 ```bash
 if [ $comprobar ];
 then
+  
+```
+Dentro de la sentencia IF, creo el directorio correspondiente al usuario y le otorgo los permisos
+
+```bash
    sudo mkdir /srv/ftp_$usu
    sudo chmod 777 /srv/ftp_$usu
-   
+```
+Creo el usuario, donde el UID y el GID se irán incrementado de 1 con cada usuario que se vaya creando; para así no repetir identificadores. Si el usuario no existe muestro un mensaje de error
+
+```bash
    sudo ftpasswd --passwd --name=$usu --uid=$(($UID+1)) --gid=$(($GID+1)) --home /srv/ftp_$usu --shell /bin/false
 else
   echo "ERROR. El usuario no existe"
