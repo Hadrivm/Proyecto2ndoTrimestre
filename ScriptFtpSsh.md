@@ -28,7 +28,6 @@ Con una sentencia IF, si el usuario existe le doy acceso a los servicios
 ```bash
 if [ $comprobar ];
 then
-  
 ```
 Dentro de la sentencia IF, creo el directorio correspondiente al usuario y le otorgo los permisos
 
