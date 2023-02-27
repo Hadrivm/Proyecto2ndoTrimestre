@@ -23,7 +23,7 @@ Creo el fichero de zona para el subdominio
 sudo mkdir /etc/bind/zones/db.$subdom
 ```
 
-Añado la información necesaria al fichero de zona directoa
+Añado la información necesaria al fichero de zona directa
 
 ```bash
 echo
