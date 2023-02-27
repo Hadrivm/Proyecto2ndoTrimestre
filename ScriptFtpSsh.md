@@ -1,4 +1,4 @@
-#ScriptFTPSSH
+# ScriptFTPSSH
 
 ### Con este script automatizo la creación de usuarios con acceso a ftp, ssh, etc..
 
